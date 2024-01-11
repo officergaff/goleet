@@ -1,9 +1,12 @@
 package utils
 
 import (
+	"reflect"
 	"testing"
 )
 
 func TestError[T any](t *testing.T, got T, want T) {
-	t.Fatalf("Got %v, wanted %v", got, want)
+	if !reflect.DeepEqual(got, want) {
+		t.Fatalf("Got %v, wanted %v", got, want)
+	}
 }

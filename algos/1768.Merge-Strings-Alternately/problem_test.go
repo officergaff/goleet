@@ -9,7 +9,5 @@ import (
 func TestBase(t *testing.T) {
 	res := mergeAlternately("abc", "pqr")
 	want := "apbqcr"
-	if res != want {
-		utils.TestError(t, res, want)
-	}
+	utils.TestError(t, res, want)
 }

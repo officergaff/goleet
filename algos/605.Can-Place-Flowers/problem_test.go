@@ -7,7 +7,7 @@ import (
 )
 
 func TestBase(t *testing.T) {
-	got := kidsWithCandies([]int{2, 3, 5, 1, 3}, 3)
-	want := []bool{true, true, true, false, true}
+	got := canPlaceFlowers([]int{1, 0, 0, 0, 1}, 1)
+	want := true
 	utils.TestError(t, got, want)
 }
