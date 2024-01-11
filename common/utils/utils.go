@@ -1,7 +1,9 @@
 package utils
 
-import "testing"
+import (
+	"testing"
+)
 
-func TestError(t *testing.T, got string, want string) {
+func TestError[T any](t *testing.T, got T, want T) {
 	t.Fatalf("Got %v, wanted %v", got, want)
 }
