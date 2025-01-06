@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	algos "github.com/xinxin001/goleet/algos/342.Reverse-Vowels-of-a-String"
+	algos "github.com/xinxin001/goleet/algos/1207"
 )
 
 func main() {
-	s := "hello"
-	ans := algos.ReverseVowels(s)
+	test := []int{1, 2}
+	ans := algos.UniqueOccurrences(test)
 	fmt.Println(ans)
 }
